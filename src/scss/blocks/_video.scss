@@ -1,0 +1,38 @@
+.video {
+  padding-top: 127px;
+  padding-bottom: 191px;
+  background-color: var(--back-light);
+}
+
+.video__img-wrapper {
+  position: relative;
+}
+
+.video__controls {
+
+}
+
+.video__play {
+  position: absolute;
+  width: 148px;
+  height: 148px;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 50%;
+}
+
+.video__title {
+  margin-bottom: 17px;
+}
+
+.video__subtitle {
+  margin-bottom: 28px;
+}
+.video__text {
+  color: var(--text-dark-transparent);
+}

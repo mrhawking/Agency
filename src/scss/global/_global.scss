@@ -1,0 +1,108 @@
+body {
+	-webkit-text-size-adjust: none;//чтобы хром не пересчитывал шрифт заголовка
+}
+
+.none {
+	display: none !important;
+}
+
+.container {
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.title-accent {
+	font-size: 16px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: var(--accent);
+	font-weight: 400;
+}
+
+.title-l {
+	font-size: 56px;
+	font-weight: 800;
+	line-height: 1.14;
+	letter-spacing: -1px;
+
+	&--dark {
+		color: var(--text-dark);
+	}
+
+	&--light {
+		color: var(--text-light);
+	}
+}
+
+.title-m {
+	font-size: 40px;
+	font-weight: 800;
+	line-height: 1.2;
+
+	&--dark {
+		color: var(--text-dark);
+	}
+
+	&--light {
+		color: var(--text-light);
+	}
+}
+
+.title-s {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.33;
+
+	&--dark {
+		color: var(--text-dark);
+	}
+
+	&--light {
+		color: var(--text-light);
+	}
+}
+
+.grid-columns-container {
+	display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.grid-column-text {
+	max-width: 470px;
+  align-self: center;
+
+	&--right {
+		justify-self: end;
+	}
+
+	&--left {
+		justify-self: start;
+	}
+}
+
+.grid-column-image {
+  align-self: center;
+
+	&--left {
+		justify-content: start;
+	}
+
+	&--right {
+		justify-content: end;
+	}
+}

@@ -1,0 +1,25 @@
+.pertners {
+  background-color: var(--back-light);
+}
+
+.partners__inner {
+  padding-top: 72px;
+  padding-bottom: 72px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.partners__list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 45px;
+  
+}
+.partners__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20px;
+}
+.partners__img {
+  object-fit: contain;
+}

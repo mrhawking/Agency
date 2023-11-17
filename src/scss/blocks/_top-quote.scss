@@ -1,0 +1,29 @@
+.top-quote {
+  display: flex;
+  gap: 16px;
+}
+
+.top-quote__img-wrapper {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(181, 80, 246, 1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.top-quote__img {
+  display: block;
+  object-fit: contain;
+}
+.top-quote__inner {
+}
+.top-quote__text {
+  color: var(--text-light-transparent);
+}
+.top-quote__cite {
+  color: var(--text-light);
+  font-style: normal;
+}

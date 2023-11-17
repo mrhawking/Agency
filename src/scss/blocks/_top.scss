@@ -1,0 +1,63 @@
+.top {
+  background-color: var(--back-dark);
+  padding: 100px 0 60px;
+}
+
+.top__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.top__content {
+  padding-top: 10px;
+  max-width: 515px;
+  align-self: center;
+}
+
+.top__title {
+  margin-bottom: 24px;
+}
+
+.top__subtitle {
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 1.11;
+  letter-spacing: -2px;
+  color: var(--text-light);
+  margin-bottom: 24px;
+  text-transform: capitalize;
+}
+
+.top__text {
+  max-width: 470px;
+  color: var(--text-light-transparent);
+  margin-bottom: 34px;
+}
+
+.top__links {
+  display: flex;
+  align-items: center;
+  gap: 46px;
+  flex-wrap: wrap ;
+  margin-bottom: 108px;
+}
+
+.top__about-btn {
+}
+
+.top__contact {
+  color: var(--text-light);
+  text-transform: capitalize;
+}
+
+.top__image {
+  justify-self: end;
+  align-self: self-start;
+}
+
+.top__image img {
+  display: block;
+  max-width: 100%;
+  object-fit: contain;
+}

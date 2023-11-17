@@ -1,0 +1,38 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.nav__toggle {
+  display: none;
+}
+.nav__logo {
+  display: block;
+  flex-shrink: 0;
+}
+
+.nav__logo img {
+  display: block;
+}
+.nav__list {
+  display: flex;
+  flex-basis: 750px;
+  justify-content: space-around;
+  align-items: center;
+  flex-shrink: 1;
+  margin-top: 5px;//т.к.шрифт странный и наверху он прилипает,а внизу есть свободное пространство
+}
+.nav__item {
+  // padding: 10px;
+}
+.nav__link {
+  display: block;
+  line-height: 3;
+  color: var(--text-light);
+  padding: 0 10px;
+}
+.nav__btn {
+  flex-basis: 138px;
+  flex-shrink: 0;
+}

@@ -1,0 +1,38 @@
+.about {
+  background-color: var(--back-light);
+  padding-top: 100px;
+  padding-bottom: 140px;
+}
+
+.about__inner {
+  margin-bottom: 160px;
+}
+
+.about__img {
+  display: block;
+  max-width: 100%;
+  width: 566px;
+  object-fit: contain;
+}
+
+.about__title {
+  margin-bottom: 20px;
+}
+
+.about__subtitle {
+  margin-bottom: 26px;
+}
+.about__tagline {
+  margin-bottom: 18px;
+  font-size: 20px;
+  color: var(--text-dark);
+}
+.about__text {
+  margin-bottom: 34px;
+  color: var(--text-dark-transparent);
+}
+
+.about__btn {
+}
+.about__stats {
+}

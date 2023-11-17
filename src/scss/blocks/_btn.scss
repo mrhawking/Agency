@@ -1,0 +1,29 @@
+.btn, a.btn {
+  display: inline-block;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  min-width: 138px;
+  padding: 18px 20px 14px;
+  line-height: 1;
+}
+
+.btn--dark, a.btn--dark {
+  border: 1px solid rgba(255, 255, 255, 0.30);
+  color: var(--text-light);
+}
+
+.btn--light, a.btn--light {
+  color: var(--text-dark);
+  border: 1px solid var(--text-light);
+  background-color: var(--text-light);
+  box-shadow: 0px 3px 9px 0px rgba(57, 20, 0, 0.08);
+}
+
+.btn--accent, a.btn--accent {
+  color: var(--text-light);
+  background-color: var(--accent);
+  border: 1px solid var(--accent);
+}
