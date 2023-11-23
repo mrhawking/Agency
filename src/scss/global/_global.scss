@@ -99,10 +99,10 @@ body {
   align-self: center;
 
 	&--left {
-		justify-content: start;
+		justify-self: start;
 	}
 
 	&--right {
-		justify-content: end;
+		justify-self: end;
 	}
 }

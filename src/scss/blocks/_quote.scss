@@ -1,0 +1,55 @@
+.quote {
+  display: flex;
+  gap: 16px;
+}
+
+.quote__img-wrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  align-items: flex-end;
+  overflow: hidden;
+
+  &--light {
+    background-color: rgba(181, 80, 246, 1);
+  }
+
+  &--dark {
+    background-color: rgba(247, 203, 71, 1);
+  }
+}
+
+.quote__img {
+  display: block;
+  object-fit: contain;
+}
+
+.quote__inner {}
+
+.quote__text {
+  font-size: 14px;
+  line-height: 24px;
+
+  &--light {
+    color: var(--text-light-transparent);
+  }
+
+  &--dark {
+    color: var(--text-dark-transparent);
+  }
+}
+
+.quote__cite {
+  font-style: normal;
+
+  &--light {
+    color: var(--text-light);
+  }
+
+  &--dark {
+    color: var(--text-dark);
+  }
+}

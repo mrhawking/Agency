@@ -1,0 +1,43 @@
+.features {
+  background-color: var(--back-light);
+}
+
+.features .grid-columns-container {
+  margin-bottom: 202px;
+}
+
+.features__title {
+  margin-bottom: 20px;
+}
+
+.features__subtitle {
+  margin-bottom: 26px;
+}
+
+.features__text {
+  margin-bottom: 26px;
+  color: var(--text-dark);
+  font-size: 20px;
+}
+.features__list {
+  color: var(--text-dark-transparent);
+}
+.features__item {
+  position: relative;
+  padding-left: 48px;
+  margin-bottom: 16px;
+}
+
+.features__item::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 0;
+  top: 0;
+  background-color: var(--accent);
+  background-image: url("./../img/check.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 50%;
+}
