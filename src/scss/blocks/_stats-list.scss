@@ -2,16 +2,16 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   border-top: 1px solid var(--border-light);
-  border-bottom: 1px solid var(--border-light);
 }
 
 .stats-list__item {
   padding: 45px 48px 38px 48px;
-  border-left: 1px solid var(--border-light)
+  border-bottom: 1px solid var(--border-light);
+  border-right: 1px solid var(--border-light)
 }
 
-.stats-list__item:first-child {
-  border-left: none;
+.stats-list__item:nth-child(3n) {
+  border-right: none;
 }
 
 .stats-list__number {

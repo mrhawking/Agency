@@ -12,23 +12,34 @@
 .service-details__list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
   border-top: 1px solid var(--border-light);
-  border-bottom: 1px solid var(--border-light);
 }
 .service-details__item {
-  position: relative;
-  padding: 159px 12% 52px 12%;
+  padding-top: 159px;
+  padding-bottom: 52px;
+  border-bottom: 1px solid var(--border-light);
   border-right: 1px solid var(--border-light);
 
-  &:last-child {
+  &:nth-child(3n) {
     border-right: none;
   }
 
+}
+
+.service-details__inner {
+  max-width: 314px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  
   &::before {
     content: "";
     position: absolute;
-    top: 48px;
-    left: 48px;
+    top: -115px;
+    left: 0;
     width: 80px;
     height: 80px;
     background-color: var(--accent);
@@ -46,7 +57,6 @@
   &--marketing::before {
     background-image: url("./../img/service-marketing.svg");
   }
-
 }
 
 .service-details__caption {
