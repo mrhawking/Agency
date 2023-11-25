@@ -1,5 +1,5 @@
-.service-details {
-}
+.service-details {}
+
 .service-details__title {
   margin-bottom: 17px;
 }
@@ -15,9 +15,9 @@
   justify-content: center;
   border-top: 1px solid var(--border-light);
 }
+
 .service-details__item {
-  padding-top: 159px;
-  padding-bottom: 52px;
+
   border-bottom: 1px solid var(--border-light);
   border-right: 1px solid var(--border-light);
 
@@ -28,17 +28,22 @@
 }
 
 .service-details__inner {
-  max-width: 314px;
-  margin: 0 auto;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 314px;
+  height: 100%;
+  margin: 0 auto;
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 159px;
+  padding-bottom: 52px;
 
-  
+
   &::before {
     content: "";
     position: absolute;
-    top: -115px;
+    top: 40px;
     left: 0;
     width: 80px;
     height: 80px;
@@ -51,9 +56,11 @@
   &--design::before {
     background-image: url("./../img/service-design.svg");
   }
+
   &--development::before {
     background-image: url("./../img/service-development.svg");
   }
+
   &--marketing::before {
     background-image: url("./../img/service-marketing.svg");
   }
@@ -62,9 +69,11 @@
 .service-details__caption {
   margin-bottom: 19px;
 }
+
 .service-details__excerpt {
-  color: var(--text-dark-transparent);
+  flex-grow: 1;
   margin-bottom: 26px;
+  color: var(--text-dark-transparent);
 }
 
 .service-details__link {
