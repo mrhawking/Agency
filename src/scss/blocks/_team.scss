@@ -1,0 +1,72 @@
+.team {
+  padding-top: 50px;
+  padding-bottom: 176px;
+  background-color: var(--back-dark);
+}
+
+.team__title {
+  margin-bottom: 20px;
+}
+
+.team__subtitle {
+  max-width: 531px;
+  margin-bottom: 16px;
+}
+
+.team__btn-wrapper {
+  margin-left: auto;
+  max-width: 120px;
+  text-align: right;
+}
+
+.team__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 244px;
+}
+
+.team__item {
+
+}
+
+.team__img-wrapper {
+  width: 270px;
+  height: 272px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border: 1px solid var(--border-dark);
+  border-radius: 6px;
+  margin-bottom: 26px;
+}
+
+.team__img {
+  object-fit: contain;
+}
+
+.team__name {
+  margin-bottom: 3px;
+}
+
+.team__position {
+  color: var(--text-light-transparent);
+}
+
+.team__quote-text {
+  background-image: url("./../img/quote.svg");
+  background-position: top 10px right 46px;
+  background-repeat: no-repeat;
+}
+
+.team__quote-title {
+  margin-bottom: 33px;
+}
+
+.team__quote {
+  margin-bottom: 44px;
+}
+
+.team__quote-name {
+  color: var(--text-light);
+  font-size: 20px;
+}

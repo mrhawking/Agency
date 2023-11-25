@@ -1,0 +1,20 @@
+.slider-btn {
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--border-dark);
+  border-radius: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  &:hover {
+    border-color: var(--text-light-transparent);
+  }
+}
+.slider-btn__prev {
+  margin-right: 16px;
+  background-image: url("./../img/arrow-prev.svg");
+
+}
+.slider-btn__next {
+  background-image: url("./../img/arrow-next.svg");
+}
