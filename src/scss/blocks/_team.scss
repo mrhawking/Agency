@@ -11,6 +11,10 @@
 .team__subtitle {
   max-width: 531px;
   margin-bottom: 16px;
+
+  span {
+    text-transform: none;
+  }
 }
 
 .team__btn-wrapper {
@@ -64,6 +68,7 @@
 
 .team__quote {
   margin-bottom: 44px;
+  text-transform: none;
 }
 
 .team__quote-name {

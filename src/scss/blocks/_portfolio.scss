@@ -44,6 +44,7 @@
   min-height: 200px;
   flex-basis: 40%;
   position: relative;
+  background-color: var(--border-dark);
 
   &:nth-child(4n + 2),
   &:nth-child(4n + 3) {
