@@ -24,14 +24,16 @@
 
 .testimonials__item {
   border-bottom: 1px solid var(--border-light);
+  border-right: 1px solid var(--border-light);
+
+  &:nth-child(odd) {
+    border-left: 1px solid var(--border-light);
+  }
 
   &:first-child, &:nth-child(2) {
     border-top: 1px solid var(--border-light);
   }
 
-  &:nth-child(odd) {
-    border-right: 1px solid var(--border-light);
-  }
 }
 
 .testimonials__rating {

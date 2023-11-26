@@ -13,16 +13,14 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
-  border-top: 1px solid var(--border-light);
 }
 
 .service-details__item {
-
-  border-bottom: 1px solid var(--border-light);
-  border-right: 1px solid var(--border-light);
-
-  &:nth-child(3n) {
-    border-right: none;
+  
+  border: 1px solid var(--border-light);
+ 
+  &:not(:first-child) {
+    border-left: none;
   }
 
 }
