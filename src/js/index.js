@@ -1,3 +1,19 @@
+import accordion from "./modules/faq-accordion";
+accordion();
+
+// while (true) {
+//   accordionBtn[0].addEventListener('click', () => {
+//     console.log('hi')
+//   })
+// }
+
+// accordionBtn[0].addEventListener('click', () => {
+//   console.log('hi')
+// })
+
+
+
+
 // import hello from './modules/hello.js';
 // import AirDatepicker from 'air-datepicker';
 // import 'air-datepicker/air-datepicker.css';

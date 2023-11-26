@@ -1,0 +1,31 @@
+.faq {
+  padding: 70px;
+  padding: 106px;
+  background-color: var(--back-light);
+  .grid-column-text {
+    align-self: start;
+  }
+
+  .grid-column-text--right {
+    max-width: 570px;
+    justify-self: stretch;
+  }
+
+}
+
+.faq__title {
+  margin-bottom: 17px;
+}
+
+.faq__subtitle {
+  margin-bottom: 31px;
+}
+
+.faq__excerpt {
+  margin-bottom: 29px;
+  color: var(--text-dark-transparent);
+}
+.faq__link {
+  color: var(--text-dark);
+  text-transform: capitalize;
+}

@@ -21,7 +21,7 @@
 
 .pricing__item {
   border: 1px solid var(--border-light);
-  border-radius: 6px 6px 0px 0px;
+  border-radius: 6px 0px 6px 0px;
 }
 
 .pricing__item-inner {
@@ -50,6 +50,7 @@
 
 .pricing__desc {
   margin-bottom: 27px;
+  color: var(--text-dark-transparent);
 }
 
 .pricing__features-list {
@@ -59,14 +60,14 @@
 
 .pricing__features-item {
   margin-bottom: 16px;
-  color: var(--text-dark--transparent);
+  color: var(--text-dark);
   list-style-image: url("./../img/marker-plus.svg");
   padding-left: 16px;
 }
 
 .pricing__features-item--disabled {
   list-style-image: url("./../img/marker-minus.svg");
-  color: var(--text-dark--transparent);
+  color: var(--text-dark-transparent);
 }
 
 
