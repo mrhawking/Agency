@@ -1,0 +1,22 @@
+.contacts {
+  background-color: var(--back-light);
+}
+
+.contacts__inner {
+  position: relative;
+}
+
+.contacts__form-wrapper {
+  position: relative;
+  padding-top: 127px;
+  padding-bottom: 128px;
+}
+
+.contacts__img-wrapper {
+  position: absolute;
+  width: 1440px;
+  height: 719px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}

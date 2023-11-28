@@ -1,0 +1,29 @@
+.newsletter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--back-light);
+  border-top: 1px solid var(--border-light);
+}
+.newsletter__title {
+
+}
+.newsletter__form {
+  display: flex;
+  gap: 30px;
+}
+
+.newsletter__input {
+  min-width: 370px;
+  padding: 9px 16px 7px 16px;
+  background-color: var(--text-light);
+  color: var(--text-dark);
+  border-radius: 6px;
+  border: 1px solid var(--border-light);
+
+  &::placeholder {
+    color: var(--text-dark-transparent);
+  }
+}

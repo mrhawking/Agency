@@ -1,6 +1,8 @@
 import accordion from "./modules/faq-accordion";
 accordion();
 
+
+
 // while (true) {
 //   accordionBtn[0].addEventListener('click', () => {
 //     console.log('hi')
