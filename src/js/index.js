@@ -1,5 +1,22 @@
 import accordion from "./modules/faq-accordion";
+import customSelect from "./modules/custom-select";
 accordion();
+customSelect();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -19,7 +19,7 @@
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  padding: 41px 70px 40px 48px;
+  padding: 41px 35px 40px 48px;
 }
 
 .faq-accordion__btn {
@@ -41,6 +41,6 @@
 .faq-accordion__text {
   display: none;
   opacity: 1;
-  padding: 0 49px 44px 49px;
+  padding: 0 49px 40px 49px;
   color: var(--text-dark-transparent);
 }

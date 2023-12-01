@@ -4,15 +4,7 @@
     <label class="visually-hidden" for="form-email">Your email</label>
     <input class="contact-form__item contact-form__email" type="text" id="form-email" name="email"
       placeholder="Your email" required>
-    <label class="visually-hidden" for="form-subject">Subject</label>
-    <div class="contact-form__select-wrapper">
-      <select class="contact-form__item contact-form__subject" type="text" id="form-subject" name="subject"
-        placeholder="Subject" required>
-        <option value="Subject-1" selected>Subject 1</option>
-        <option value="Subject-2">Subject 2</option>
-        <option value="Subject-3">Subject 3</option>
-      </select>
-    </div>
+      @@include("./dropdown.html")
     <label class="visually-hidden" for="form-message">Message</label>
     <textarea class="contact-form__item contact-form__message" type="text" id="form-message" name="message"
       maxlength="500" minlength="10" placeholder="Message" required></textarea>

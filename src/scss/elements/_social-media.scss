@@ -1,0 +1,31 @@
+.social-media {
+  display: flex;
+  gap: 8px;
+}
+.social-media__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  overflow: hidden;
+
+  a {
+    display: block;
+    padding: 12px;
+  }
+
+  svg {
+    fill: var(--text-light);
+  }
+
+  &:hover {
+    background-color: var(--text-light);
+
+    svg {
+      fill: var(--accent);
+    }
+  }
+}

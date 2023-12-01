@@ -3,7 +3,6 @@ function accordion() {
   const accordionItems = document.querySelectorAll('.faq-accordion__item');
 
   const accordionToggler = (index) => {
-    accordionItems[index].classList.toggle('faq-accordion__item--closed');
     accordionItems[index].classList.toggle('faq-accordion__item--opened');
   }
 
