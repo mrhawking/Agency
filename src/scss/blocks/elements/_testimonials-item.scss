@@ -1,0 +1,49 @@
+.testimonials-item{
+  padding: 48px 48px 48px 51px;
+  break-inside: avoid;
+  border: 1px solid var(--border-light);
+  
+  &:hover {
+    background-color: var(--text-light);
+  }
+}
+
+.testimonials-item__rating {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 36px;
+}
+
+.testimonials-item__text {
+  color: var(--text-dark-transparent);
+  margin-bottom: 36px;
+}
+
+.testimonials-item__person {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.testimonials-item__img-wrapper {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.testimonials-item__img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonials-item__name {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5px;
+}
+
+.testimonials-item__work {
+  font-size: 16px;
+  font-weight: 400;
+}

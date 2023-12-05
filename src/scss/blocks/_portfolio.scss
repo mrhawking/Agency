@@ -24,10 +24,21 @@
 
 .portfolio__sort-item {
   color: var(--text-light-transparent);
+  display: block;
 
-  &--active,
-  &:hover {
+  &--active {
     color: var(--text-light);
+  }
+
+  button {
+    padding: 3px;
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: var(--accent);
+      color: var(--text-light);
+      border-radius: 6px;
+    }
   }
 }
 

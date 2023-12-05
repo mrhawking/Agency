@@ -22,8 +22,16 @@
   justify-content: center;
   align-items: center;
   transform: translate(-50%, -50%);
-  border: 1px solid rgba(255, 255, 255, 1);
+  border: 1px solid var(--text-light);
   border-radius: 50%;
+
+  &:hover, &:focus, &:active {
+    border: 1px solid var(--text-light-transparent);
+
+    img {
+      opacity: 0.64;
+    }
+  }
 }
 
 .video__title {

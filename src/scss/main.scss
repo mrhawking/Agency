@@ -3,5 +3,4 @@
 @import "./global/reset";
 @import "./global/global";
 
-@import "./blocks/*.scss";
-@import "./elements/*.scss";
+@import "./blocks/**/*.scss";

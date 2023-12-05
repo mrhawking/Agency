@@ -1,31 +1,56 @@
 <footer class="footer">
-<div class="container footer__inner">
-  <nav class="footer-nav" aria-labelledby="footer-navigation-label">
-    <a href="#" class="footer-nav__logo">
-      <span class="visually-hidden">Go to main page</span>
-      <img src="./img/logo-dark.svg" width="90" height="32" alt="Logo">
-    </a>
-    <ul class="footer-nav__main-list">
-      <li>
-        <span>Menu</span>
-        <ul class="footer-nav__inner-list">
-          <li><a>About</a></li>
-          <li><a>Services</a></li>
-          <li><a>Blog</a></li>
-          <li><a>Contact</a></li>
+  <div class="container">
+    <div class="footer__inner">
+      <nav class="footer-nav" aria-labelledby="footer-navigation-label">
+        <a href="#" class="footer-nav__logo">
+          <span class="visually-hidden">Go to main page</span>
+          <img src="./img/logo-dark.svg" width="90" height="32" alt="Logo">
+        </a>
+        <ul class="footer-nav__main-list">
+          <li>
+            <h3 class="footer-nav__main-item title-accent">Menu</h3>
+            <ul class="footer-nav__inner-list">
+              <li class="footer-nav__inner-item">
+                <a class="footer-nav__inner-link" href="#">About</a>
+              </li>
+              <li class="footer-nav__inner-item">
+                <a class="footer-nav__inner-link" href="#">Services</a>
+              </li>
+              <li class="footer-nav__inner-item">
+                <a class="footer-nav__inner-link" href="#">Blog</a>
+              </li>
+              <li class="footer-nav__inner-item">
+                <a class="footer-nav__inner-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3 class="footer-nav__main-item title-accent">Service</h3>
+            <ul class="footer-nav__inner-list">
+              <li class="footer-nav__inner-item">
+                <a class="footer-nav__inner-link" href="#">Design</a>
+              </li>
+              <li class="footer-nav__inner-item">
+                <a class="footer-nav__inner-link" href="#">Development</a>
+              </li>
+              <li class="footer-nav__inner-item">
+                <a class="footer-nav__inner-link" href="#">Marketing</a>
+              </li>
+              <li class="footer-nav__inner-item">
+                <a class="footer-nav__inner-link" href="#">See More</a>
+              </li>
+            </ul>
+          </li>
         </ul>
-      </li>
-      <li>
-        <span>Service</span>
-        <ul class="footer-nav__inner-list">
-          <li><a>Design</a></li>
-          <li><a>Development</a></li>
-          <li><a>Marketing</a></li>
-          <li><a>See More</a></li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
-  @@include("elements/social-media.html")
-</div>
+      </nav>
+      @@include("elements/social-media.html")
+    </div>
+    <div class="footer__copyright">
+      <p class="footer__copyright-text">Copyright © 2022 Laaqiq. All Rights Reserved.</p>
+      <div class="footer__copyright-links">
+        <a class="footer__copyright-link" href="#">Terms of Use</a>
+        <a class="footer__copyright-link" href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
 </footer>

@@ -23,37 +23,10 @@
   text-align: right;
 }
 
-.team__list {
+.team__slider {
   display: flex;
   justify-content: space-between;
   margin-bottom: 244px;
-}
-
-.team__item {
-
-}
-
-.team__img-wrapper {
-  width: 270px;
-  height: 272px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  border: 1px solid var(--border-dark);
-  border-radius: 6px;
-  margin-bottom: 26px;
-}
-
-.team__img {
-  object-fit: contain;
-}
-
-.team__name {
-  margin-bottom: 3px;
-}
-
-.team__position {
-  color: var(--text-light-transparent);
 }
 
 .team__quote-text {

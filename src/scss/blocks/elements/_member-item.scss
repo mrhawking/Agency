@@ -1,0 +1,26 @@
+.member-item__item {
+
+}
+
+.member-item__img-wrapper {
+  width: 270px;
+  height: 272px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border: 1px solid var(--border-dark);
+  border-radius: 6px;
+  margin-bottom: 26px;
+}
+
+.member-item__img {
+  object-fit: contain;
+}
+
+.member-item__name {
+  margin-bottom: 3px;
+}
+
+.member-item__position {
+  color: var(--text-light-transparent);
+}

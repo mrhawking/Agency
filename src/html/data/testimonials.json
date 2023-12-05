@@ -1,0 +1,30 @@
+[
+  {
+    "stars": 5,
+    "name": "Alan Martí",
+    "text": "A digital agency is a business you hire to outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety of digital solutions to promote your product or service online and help you.",
+    "source": "Meta Inc.",
+    "avatar": "1.jpg"
+  },
+  {
+    "stars": 5,
+    "name": "Graham Griffiths",
+    "text": "Outsource your digital marketing efforts, instead of handling in-house. They can provide your business with a variety.",
+    "source": "Twitor",
+    "avatar": "2.jpg"
+  },
+  {
+    "stars": 5,
+    "name": "Richardo Kann",
+    "text": "Provide your business with a variety of digital solutions to promote your product or service online.",
+    "source": "Photogram",
+    "avatar": "3.jpg"
+  },
+  {
+    "stars": 5,
+    "name": "Maria Trofimova",
+    "text": "Promote your product or service online and help you hit your marketing goals and grow your business.",
+    "source": "Whochat",
+    "avatar": "4.jpg"
+  }
+]
