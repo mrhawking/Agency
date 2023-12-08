@@ -1,92 +1,26 @@
 <section class="team">
   <div class="container">
     <h2 class="team__title title-accent">Our team</h2>
-    <p class="team__subtitle title-l title-l--light">Team <span>of </span>designers <span>and </span>developers</p>
-    <div class="team__btn-wrapper">
-      <button class="slider-btn slider-btn__prev" id="team-slider-prev" type="button"><span
-          class="visually-hidden">Previous</span></button>
-      <button class="slider-btn slider-btn__next" id="team-slider-next" type="button"><span
-          class="visually-hidden">Next</span></button>
+    <div class="team__top">
+      <p class="team__subtitle title-l title-l--light">Team <span>of </span>designers <span>and </span>developers</p>
+      <div class="team__btn-wrapper">
+        <button class="slider-btn slider-btn__prev" id="team-slider-prev" type="button"><span
+            class="visually-hidden">Previous</span></button>
+        <button class="slider-btn slider-btn__next" id="team-slider-next" type="button"><span
+            class="visually-hidden">Next</span></button>
+      </div>
     </div>
 
     <div class="team__slider">
-      <div class="swiper-wrapper">
-
-        <div class="member-item swiper-slide">
-          <div class="member-item__img-wrapper">
-            <img class="member-item__img" src="./img/team/azah-anyeni.png" alt="">
-          </div>
-          <h3 class="member-item__name title-s title-s--light">Azah Anyeni</h3>
-          <p class="member-item__position">Designer</p>
-        </div>
-
-        <div class="member-item swiper-slide">
-          <div class="member-item__img-wrapper">
-            <img class="member-item__img" src="./img/team/azah-anyeni.png" alt="">
-          </div>
-          <h3 class="member-item__name title-s title-s--light">Azah Anyeni</h3>
-          <p class="member-item__position">Designer</p>
-        </div>
-
-        <div class="member-item swiper-slide">
-          <div class="member-item__img-wrapper">
-            <img class="member-item__img" src="./img/team/azah-anyeni.png" alt="">
-          </div>
-          <h3 class="member-item__name title-s title-s--light">Azah Anyeni</h3>
-          <p class="member-item__position">Designer</p>
-        </div>
-
-        <div class="member-item swiper-slide">
-          <div class="member-item__img-wrapper">
-            <img class="member-item__img" src="./img/team/azah-anyeni.png" alt="">
-          </div>
-          <h3 class="member-item__name title-s title-s--light">Azah Anyeni</h3>
-          <p class="member-item__position">Designer</p>
-        </div>
-
-        <div class="member-item swiper-slide">
-          <div class="member-item__img-wrapper">
-            <img class="member-item__img" src="./img/team/azah-anyeni.png" alt="">
-          </div>
-          <h3 class="member-item__name title-s title-s--light">Azah Anyeni</h3>
-          <p class="member-item__position">Designer</p>
-        </div>
-
-        <div class="member-item swiper-slide">
-          <div class="member-item__img-wrapper">
-            <img class="member-item__img" src="./img/team/azah-anyeni.png" alt="">
-          </div>
-          <h3 class="member-item__name title-s title-s--light">Azah Anyeni</h3>
-          <p class="member-item__position">Designer</p>
-        </div>
-      </div>
-
-      <!-- <div class="swiper-pagination"></div> -->
-
-
-
-      <!-- <div class="swiper">
-
+      <div class="swiper" id="team-swiper">
         <div class="swiper-wrapper">
-
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
-          <div class="swiper-slide">Slide 4</div>
-          <div class="swiper-slide">Slide 5</div>
-          <div class="swiper-slide">Slide 6</div>
-          <div class="swiper-slide">Slide 7</div>
-          <div class="swiper-slide">Slide 8</div>
+          @@loop("./elements/member-item.html", "./data/team.json")
         </div>
-
         <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
-      </div> -->
-
-
+      </div>
     </div>
+
+
 
     <div class="grid-columns-container">
       <div class="grid-column-image grid-column-image--left">

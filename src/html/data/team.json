@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Alan Martí",
+    "position": "Designer",
+    "photo": "1.png"
+  },
+  {
+    "name": "Roelof Bekkenenks",
+    "position": "React Developer",
+    "photo": "2.png"
+  },
+  {
+    "name": "Leonardo Oliveira",
+    "position": "Illustrator",
+    "photo": "3.png"
+  },
+  {
+    "name": "Izabella Tabakova",
+    "position": "Product Designer",
+    "photo": "4.png"
+  },
+  {
+    "name": "Lady",
+    "position": "Eater",
+    "photo": "5.png"
+  },
+  {
+    "name": "Sweety",
+    "position": "Bun",
+    "photo": "6.png"
+  },
+  {
+    "name": "I need more food",
+    "position": "Burglar",
+    "photo": "7.png"
+  },
+  {
+    "name": "Fluffy tail",
+    "position": "Dormouse",
+    "photo": "8.png"
+  }
+]

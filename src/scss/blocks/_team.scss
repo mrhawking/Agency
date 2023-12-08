@@ -4,13 +4,18 @@
   background-color: var(--back-dark);
 }
 
+.team__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+
 .team__title {
   margin-bottom: 20px;
 }
 
 .team__subtitle {
   max-width: 531px;
-  margin-bottom: 16px;
 
   span {
     text-transform: none;
@@ -18,15 +23,21 @@
 }
 
 .team__btn-wrapper {
-  margin-left: auto;
+  align-self: flex-end;
   max-width: 120px;
-  text-align: right;
 }
 
 .team__slider {
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 244px;
+  overflow: hidden;
+  
+  .swiper {
+    padding-bottom: 50px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: var(--accent);
+  }
 }
 
 .team__quote-text {

@@ -1,35 +1,9 @@
 import accordion from "./modules/faq-accordion";
 import customSelect from "./modules/custom-select";
+import sliderTeam from "./modules/slider-team";
 accordion();
 customSelect();
-
-
-import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-
-const swiper = new Swiper('.team__slider', {
-  modules: [Navigation, Pagination],
-  slidesPerView: 4,
-  // loop: true,
-
-  // pagination: {
-  //   el: '.swiper-pagination',
-  //   type: 'bullets',
-  // },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '#team-slider-next',
-      prevEl: '#team-slider-prev'
-    },
-
-});
-
-
-
+sliderTeam();
 
 
 
