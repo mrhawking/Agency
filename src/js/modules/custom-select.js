@@ -9,57 +9,52 @@ function customSelect() {
     };
   }
 
-  const CLASS_VISIBLE = 'dropdown__list--visible';
-  const CLASS_ACTIVE = 'dropdown__button--active';
-  const CLASS_FILLED = 'dropdown__button--filled';
+  const dropDown = document.querySelector('.contact-form__dropdown');
+  const dropDownBtn = dropDown.querySelector('.contact-form__dropdown-button');
+  const dropDownList = dropDown.querySelector('.contact-form__dropdown-list');
+  const dropDownItems = dropDownList.querySelectorAll('.contact-form__dropdown-item');
+  const dropDownInput = dropDown.querySelector('.select-input-js');
 
   const hideSelectList = (btn, list) => {
-    list.classList.remove(CLASS_VISIBLE);
-    btn.classList.remove(CLASS_ACTIVE);
+    list.classList.remove('contact-form__dropdown-list--visible');
+    btn.classList.remove('contact-form__dropdown-button--active');
   };
 
-  const handleItemClick = (item, btn, input, list, btnClass) => {
+  const handleItemClick = (listItem) => {
     return (evt) => {
       evt.stopPropagation();
-      btn.innerText = item.innerText;
-      btn.classList.add(btnClass);
-      btn.focus();
-      input.value = item.dataset.value;
-      hideSelectList(btn, list);
-    };
+      dropDownBtn.innerText = listItem.innerText;
+      dropDownBtn.classList.add('contact-form__dropdown-button--filled');
+      listItem.classList.add('contact-form__dropdown-item--chosen')
+      dropDownInput.value = listItem.dataset.value;
+      dropDownBtn.focus(); 
+      hideSelectList(dropDownBtn, dropDownList);
+    }
   };
 
-  const dropDowns = document.querySelectorAll('.dropdown');
-
-  dropDowns.forEach((dropdown) => {
-    const dropDownBtn = dropdown.querySelector('.dropdown__button');
-    const dropDownList = dropdown.querySelector('.dropdown__list');
-    const dropDownItems = dropDownList.querySelectorAll('.dropdown__list-item');
-    const dropDownInput = dropdown.querySelector('.dropdown__input-hidden');
-
-    const toggleListVisibility = () => {
-      dropDownList.classList.toggle(CLASS_VISIBLE);
-      dropDownBtn.classList.add(CLASS_ACTIVE);
-    };
-
-    dropDownBtn.addEventListener('click', toggleListVisibility);
-
-    dropDownItems.forEach((listItem) => {
-      listItem.addEventListener('click', handleItemClick(listItem, dropDownBtn, dropDownInput, dropDownList, CLASS_FILLED));
-    });
-
-    document.addEventListener('click', (evt) => {
-      if (evt.target !== dropDownBtn) {
-        hideSelectList(dropDownBtn, dropDownList);
-      }
-    });
-
-    document.addEventListener('keydown', (evt) => {
-      if (evt.key === 'Tab' || evt.key === 'Escape' || evt.key === 'Esc') {
-        hideSelectList(dropDownBtn, dropDownList);
-      }
-    });
+  dropDownItems.forEach((listItem) => {
+    listItem.addEventListener('click', handleItemClick(listItem));
   });
+
+  const toggleListVisibility = () => {
+    dropDownList.classList.toggle('contact-form__dropdown-list--visible');
+    dropDownBtn.classList.add('contact-form__dropdown-button--active');
+  };
+
+  dropDownBtn.addEventListener('click', toggleListVisibility);
+
+  document.addEventListener('click', (evt) => {
+    if (evt.target !== dropDownBtn) {
+      hideSelectList(dropDownBtn, dropDownList);
+    }
+  });
+
+  document.addEventListener('keydown', (evt) => {
+    if (evt.key === 'Tab' || evt.key === 'Escape' || evt.key === 'Esc') {
+      hideSelectList(dropDownBtn, dropDownList);
+    }
+  });
+
 }
 
 export default customSelect;

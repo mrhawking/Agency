@@ -2,6 +2,10 @@
   background-color: var(--back-light);
   padding-top: 100px;
   padding-bottom: 140px;
+
+  @media (max-width: 768px) {
+    padding-top: 71px;
+  }
 }
 
 .about .grid-columns-container {
@@ -13,6 +17,7 @@
   max-width: 100%;
   width: 566px;
   object-fit: contain;
+
 }
 
 .about__title {

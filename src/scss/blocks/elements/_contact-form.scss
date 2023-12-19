@@ -10,7 +10,18 @@
   margin-bottom: 23px;
 }
 
+.contact-form__box {
+  position: relative;
+  padding-bottom: 16px;
+
+  &--error .contact-form__error {
+    display: block;
+    color: var(--accent);
+  }
+}
+
 .contact-form__item {
+  width: 100%;
   padding: 11px 16px 13px 16px;
   border: 1px solid var(--border-light);
   border-radius: 6px;
@@ -23,23 +34,103 @@
   }
 
   &:focus {
-    box-shadow: 0px 0px 10px var(--accent);
+    box-shadow: 0px 0px 10px var(--text-dark-transparent);
   }
 }
 
-.contact-form__email {
-  margin-bottom: 16px;
+.contact-form__dropdown {
+  position: relative;
 }
 
-.contact-form .dropdown {
-  margin-bottom: 16px;
+.contact-form__dropdown-button {
+  position: relative;
+  display: block;
+  height: 46px;
+  text-align: left;
+  color: var(--text-dark-transparent);
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 0;
+    height: 0;
+    transform: translateY(-50%);
+    border-style: solid;
+    border-width: 6px 5px 0px 5px;
+    border-color: var(--accent) transparent transparent transparent;
+    pointer-events: none;
+  }
+
+  &:focus,
+  &--active {
+    box-shadow: 0px 0px 10px var(--text-dark-transparent);
+  }
+
+  &--filled {
+    color: var(--text-dark);
+  }
+}
+
+
+.contact-form__dropdown-list {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 45px;
+  width: 100%;
+  background-color: var(--text-light);
+  overflow: hidden;
+  z-index: 1;
+
+  &--visible {
+    display: block;
+  }
+}
+
+.contact-form__dropdown-item {
+  border: 1px solid var(--border-light);
+  border-bottom: 0;
+  padding: 9px 16px 7px 16px;
+  cursor: pointer;
+
+  &:first-child {
+    border-radius: 6px 6px 0 0;
+  }
+
+  &:last-child {
+    border: 1px solid var(--border-light);
+    border-radius: 0 0 6px 6px;
+  }
+
+  &:hover {
+    background-color: var(--accent);
+    color: var(--text-light);
+  }
+}
+
+.contact-form__error {
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding-left: 16px;
+  line-height: 1;
+  font-size: 12px;
+  pointer-events: none;
 }
 
 .contact-form__message {
-  resize: none;
-  max-width: 374px;
   height: 96px;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
+
+  .contact-form__item {
+    resize: none;
+    max-width: 374px;
+    height: 100%;
+  }
 }
 
 .contact-form__btn {

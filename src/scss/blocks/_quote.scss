@@ -30,7 +30,7 @@
 }
 
 .quote__inner {
-  margin-bottom: 36px;
+  // margin-bottom: 36px;
 }
 
 .quote__text {
@@ -43,6 +43,10 @@
 
   &--dark {
     color: var(--text-dark-transparent);
+  }
+
+  @media (max-width: 450px) {
+    max-width: 265px;
   }
 }
 

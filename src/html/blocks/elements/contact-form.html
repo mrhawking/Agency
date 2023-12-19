@@ -1,13 +1,67 @@
 <div class="container">
-  <form action="#" class="contact-form">
+  <form action="" class="contact-form">
     <h3 class="contact-form__title title-s title-s--dark">Get In Touch</h3>
-    <label class="visually-hidden" for="form-email">Your email</label>
-    <input class="contact-form__item contact-form__email" type="text" id="form-email" name="email"
-      placeholder="Your email" required>
-      @@include("./dropdown.html")
-    <label class="visually-hidden" for="form-message">Message</label>
-    <textarea class="contact-form__item contact-form__message" type="text" id="form-message" name="message"
-      maxlength="500" minlength="10" placeholder="Message" required></textarea>
+    <div class="contact-form__box contact-form__email">
+      <label class="visually-hidden" for="form-email">Your email, for example "katebright@gmail.com"</label>
+      <input class="contact-form__item contact-form__item-email" type="email" id="form-email" value="" name="email"
+        placeholder="Your email" required>
+        <div class="contact-form__error">Please, check this input</div>
+    </div>
+    <div class="contact-form__dropdown">
+      <div class="contact-form__box ">
+        <button class="contact-form__item contact-form__dropdown-button" type="button">Subject</button>
+        <label class="visually-hidden" for="form-subject">Choose an option</label>
+        <input class="hidden select-input-js" type="text" name="select-category" value="" id="form-subject" required>
+          <div class="contact-form__error">Please, check this input</div>
+      </div>
+      <ul class="contact-form__dropdown-list">
+        <li class="contact-form__dropdown-item" data-value="subject-1">Subject 1</li>
+        <li class="contact-form__dropdown-item" data-value="subject-2">Subject 2</li>
+        <li class="contact-form__dropdown-item" data-value="subject-3">Subject 3</li>
+      </ul>
+    </div>
+    <div class="contact-form__box contact-form__box contact-form__message">
+      <label class="visually-hidden" for="form-message">Your message should contain from 2 to 500 symbols</label>
+      <textarea class="contact-form__item contact-form__item-message" type="text" id="form-message" value=""
+        name="message" maxlength="500" minlength="2" placeholder="Message" required></textarea>
+        <div class="contact-form__error">Please, check this input</div>
+    </div>
     <button class="contact-form__btn btn btn--accent" type="submit">Submit Now</button>
   </form>
+  @@include("./popup.html", {
+    "title": "Your message has been successfully sent",
+    "text": "We will reply to you within three days"
+  })
 </div>
+
+
+<!-- <div class="container">
+  <form action="" class="contact-form">
+    <h3 class="contact-form__title title-s title-s--dark">Get In Touch</h3>
+    <div class="contact-form__box contact-form__email">
+      <input class="contact-form__item contact-form__item-email" type="text" id="form-email" value="" name="email"
+        placeholder="Your email">
+      <label class="contact-form__label" for="form-email">Your email</label>
+    </div>
+    <div class="dropdown">
+      <div class="dropdown__box">
+        <button class="dropdown__button" type="button">Subject</button>
+        <label class="dropdown__label" for="form-subject">Subject</label>
+        <input class="dropdown__input--hidden dropdown__input" type="text" name="select-category" value=""
+          id="form-subject">
+      </div>
+      <ul class="dropdown__list">
+        <li class="dropdown__list-item" data-value="subject-1">Subject 1</li>
+        <li class="dropdown__list-item" data-value="subject-2">Subject 2</li>
+        <li class="dropdown__list-item" data-value="subject-3">Subject 3</li>
+      </ul>
+    </div>
+    <div class="contact-form__box contact-form__box contact-form__message ">
+      <textarea class="contact-form__item contact-form__item-message" type="text" id="form-message" value=""
+        name="message" maxlength="500" minlength="10" placeholder="Message"></textarea>
+      <label class="contact-form__label" for="form-message">Message</label>
+    </div>
+
+    <button class="contact-form__btn btn btn--accent" type="submit">Submit Now</button>
+  </form>
+</div> -->

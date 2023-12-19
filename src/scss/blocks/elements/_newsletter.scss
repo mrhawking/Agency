@@ -1,4 +1,5 @@
 .newsletter {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7,12 +8,17 @@
   background-color: var(--back-light);
   border-top: 1px solid var(--border-light);
 }
-.newsletter__title {
 
-}
 .newsletter__form {
+  position: relative;
   display: flex;
   gap: 30px;
+
+  &--error {
+    .newsletter__error {
+      display: block;
+    }
+  }
 }
 
 .newsletter__input {
@@ -26,4 +32,14 @@
   &::placeholder {
     color: var(--text-dark-transparent);
   }
+}
+
+.newsletter__error {
+  display: none;
+  position: absolute;
+  bottom: -20px;
+  left: 16px;
+  color: var(--accent);
+  line-height: 1;
+  font-size: 14px;
 }
