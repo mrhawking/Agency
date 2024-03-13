@@ -1,7 +1,14 @@
 .video {
-  padding-top: 127px;
+  padding-top: clamp(63px, 34px + 7.76vw, 127px);
   padding-bottom: 191px;
   background-color: var(--back-light);
+}
+
+
+.video .grid-column-image {
+  @include tablet {
+    margin-bottom: 24px;
+  } 
 }
 
 .video__img-wrapper {
@@ -40,6 +47,10 @@
 
 .video__subtitle {
   margin-bottom: 28px;
+
+  @include tablet {
+    margin-bottom: 16px;
+  } 
 }
 .video__text {
   color: var(--text-dark-transparent);

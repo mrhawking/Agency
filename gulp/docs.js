@@ -112,11 +112,10 @@ gulp.task('fonts:docs', () => {
     .pipe(gulp.dest('./docs/fonts/'))
 });
 
-//Эту задачу настроить потом, когда юудт понятно, какие еще файлы надо скопировать
-// gulp.task('copy:docs', () => {
-//   return gulp.src('./src/img/*.ico')
-//   .pipe(gulp.dest('./docs/'))
-// });
+gulp.task('copy:docs', () => {
+  return gulp.src('./src/img/*.ico')
+  .pipe(gulp.dest('./docs/'))
+});
 
 gulp.task('js:docs', () => {
   return gulp.src('./src/js/*.js')

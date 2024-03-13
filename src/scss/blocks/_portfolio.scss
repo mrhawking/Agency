@@ -1,7 +1,7 @@
 .portfolio {
   background-color: var(--back-dark);
-  padding-top: 92px;
-  padding-bottom: 192px;
+  padding-top: clamp(2.5rem, 1.009rem + 6.818vw, 6.25rem);
+  padding-bottom: clamp(2.5rem, 1.009rem + 6.818vw, 6.25rem);
 }
 
 .portfolio__title {
@@ -71,8 +71,8 @@
 
 .portfolio__desc {
   position: absolute;
-  left: 48px;
-  bottom: 51px;
+  left: clamp(1.25rem, 0.554rem + 3.182vw, 3rem);
+  bottom: clamp(1.25rem, 0.554rem + 3.182vw, 3rem);
 }
 
 .portfolio__kind {
@@ -81,7 +81,8 @@
   border-radius: 19px;
   color: var(--text-dark);
   background-color: var(--text-light);
-  margin-bottom: 23px;
+  margin-bottom: clamp(0.625rem, 0.302rem + 1.477vw, 1.438rem);
+  font-size: clamp(0.625rem, 0.476rem + 0.682vw, 1rem);
 }
 
 .portfolio__name {}

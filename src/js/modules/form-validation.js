@@ -1,4 +1,3 @@
-import { createElem } from "./helpers";
 import { createPopup } from "./helpers";
 
 const formValidation = () => {
@@ -7,7 +6,6 @@ const formValidation = () => {
   const inputText = contactForm.querySelector('.contact-form__item-message');
   const inputSubject = contactForm.querySelector('.select-input-js');
   const selectBtn = contactForm.querySelector('.contact-form__dropdown-button');
-
 
   const classToggle = (isValid, input) => {
     const parentNode = input.closest('.contact-form__box');
@@ -54,37 +52,6 @@ const formValidation = () => {
     selectValidation();
   };
 
-  // const createPopup = () => {
-  //   const popup = createElem('div', ['popup']);
-  //   const title = createElem('p', ['popup__title', 'title-m', 'title-m--dark'], 'Your message has been successfully sent');
-  //   const text = createElem('p', ['popup__text', 'title-s', 'title-s--dark'], 'We will reply to you within three days');
-  //   const btn = createElem('button', ['popup__btn', 'btn', 'btn--accent'], 'Okay');
-  //   popup.append(title, text, btn);
-  //   contactForm.after(popup);
-
-  //   const btnHandler = (evt) => {
-  //     evt.stopPropagation();
-  //       popup.remove();
-  //       btn.removeEventListener('click', btnHandler);
-  //       document.removeEventListener('click', btnHandler);
-  //       document.removeEventListener('keydown', btnHandler);
-
-  //   };
-
-  //   btn.addEventListener('click', (evt) => btnHandler(evt));
-  //   document.addEventListener('click', (evt) => {
-  //     if (evt.target !== popup) {
-  //       btnHandler(evt)
-  //     }
-  //   });
-  //   document.addEventListener('keydown', (evt) => {
-  //     if (evt.key === 'Escape' || evt.key === 'Esc') {
-  //       btnHandler(evt);
-  //     }
-  //   });
-  // };
-
-
   const submitHandler = (evt) => {
     evt.preventDefault();
     const isSelectValid = selectValidation();
@@ -116,17 +83,18 @@ const formValidation = () => {
 
       });
       selectBtn.classList.remove('contact-form__dropdown-button--filled')
-      selectBtn.innerText = 'Subject'
+      selectBtn.innerText = 'Subject';
+      inputSubject.value = '';
       inputEmail.value = '';
       inputText.value = '';
     }
 
   };
 
-  inputEmail.addEventListener('change', (evt) => emailHandler(evt));
-  inputText.addEventListener('change', (evt) => textHandler(evt));
+  inputEmail.addEventListener('change', emailHandler);
+  inputText.addEventListener('change', textHandler);
   inputText.addEventListener('focus', selectHandler);
-  contactForm.addEventListener('submit', (evt) => submitHandler(evt));
+  contactForm.addEventListener('submit', submitHandler);
 };
 
 export default formValidation;

@@ -1,9 +1,14 @@
 .contact-form {
-  width: 470px;
-  padding: 57px 48px;
+  width: clamp(18.75rem, 14.524rem + 19.318vw, 29.375rem);
+  padding: clamp(0.938rem, -0.107rem + 4.773vw, 3.563rem) clamp(0.75rem, -0.145rem + 4.091vw, 3rem);
   background-color: var(--text-light);
   display: flex;
   flex-direction: column;
+  border-radius: 6px;
+
+  @include tablet {
+    margin: 0 auto;
+  }
 }
 
 .contact-form__title {

@@ -1,6 +1,6 @@
 .testimonials {
-  padding-top: 124px;
-  padding-bottom: 58px;
+  padding-top: clamp(1.875rem, -0.462rem + 10.682vw, 7.75rem);
+  padding-bottom: clamp(0.938rem, -0.131rem + 4.886vw, 3.625rem);
   background-color: var(--back-light);
 }
 

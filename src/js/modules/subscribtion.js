@@ -49,8 +49,8 @@ const subscription = () => {
     }
   };
 
-  formInput.addEventListener('keyup', (evt) => inputHandler(evt))
-  subForm.addEventListener('submit', (evt) => submitHandler(evt));
+  formInput.addEventListener('keyup', inputHandler)
+  subForm.addEventListener('submit', submitHandler);
 };
 
 export default subscription;

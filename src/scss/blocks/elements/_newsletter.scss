@@ -7,6 +7,12 @@
   padding-bottom: 60px;
   background-color: var(--back-light);
   border-top: 1px solid var(--border-light);
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 .newsletter__form {
@@ -19,10 +25,15 @@
       display: block;
     }
   }
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .newsletter__input {
-  min-width: 370px;
+  min-width: 360px;
   padding: 9px 16px 7px 16px;
   background-color: var(--text-light);
   color: var(--text-dark);

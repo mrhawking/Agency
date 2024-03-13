@@ -1,6 +1,6 @@
 .pricing {
-  padding-top: 50px;
-  padding-bottom: 106px;
+  padding-top: clamp(0.938rem, 0.067rem + 3.977vw, 3.125rem);
+  padding-bottom: clamp(1.875rem, -0.014rem + 8.636vw, 6.625rem);
   background-color: var(--back-light);
 }
 
@@ -17,6 +17,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: end;
+
+  @media (max-width: 960px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .pricing__item {
@@ -29,6 +35,12 @@
   margin: 0 auto;
   padding-top: 44px;
   padding-bottom: 48px;
+
+  @media (max-width: 960px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: unset;
+  }
 }
 
 .pricing__tag {

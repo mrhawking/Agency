@@ -1,6 +1,7 @@
+
 .team {
-  padding-top: 50px;
-  padding-bottom: 176px;
+  padding-top: clamp(0.938rem, 0.067rem + 3.977vw, 3.125rem);
+  padding-bottom: clamp(2.5rem, -0.881rem + 15.455vw, 11rem);
   background-color: var(--back-dark);
 }
 
@@ -8,6 +9,11 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 64px;
+
+  @include tablet {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 .team__title {
@@ -25,12 +31,41 @@
 .team__btn-wrapper {
   align-self: flex-end;
   max-width: 120px;
+
+  @include tablet {
+    align-self: flex-start;
+  }
 }
 
+.swiper {
+  &-button-next::after,
+  &-button-prev::after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 800;
+    padding: 1rem;
+    width: 2rem;
+    height: 2rem;
+    opacity: 0.75;
+    border-radius: 50%;
+    color: var(--white-100);
+    background: var(--black-300);
+  }
+}
+
+.swiper-slide {
+  max-width: 250px;
+}
+
+
 .team__slider {
-  margin-bottom: 244px;
+  margin-bottom: clamp(3.125rem, -1.697rem + 22.045vw, 15.25rem);
   overflow: hidden;
-  
+  height: 400px;
+
+
   .swiper {
     padding-bottom: 50px;
   }
@@ -58,4 +93,8 @@
 .team__quote-name {
   color: var(--text-light);
   font-size: 20px;
+}
+
+.team__position {
+  color: var(--text-light);
 }

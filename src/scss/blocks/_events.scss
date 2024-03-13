@@ -1,7 +1,7 @@
 .events {
   background-color: var(--back-dark);
-  padding-top: 140px;
-  padding-bottom: 90px;
+  padding-top: clamp(3.125rem, 1.882rem + 5.682vw, 6.25rem);
+  padding-bottom: clamp(3.125rem, 1.882rem + 5.682vw, 6.25rem);
 }
 
 .events__title {

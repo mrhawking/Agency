@@ -1,5 +1,5 @@
 .slogan {
-  padding: 38px 70px 72px 100px;
+  padding: 38px clamp(1.25rem, 0.007rem + 5.682vw, 4.375rem) clamp(1.25rem, 0.007rem + 5.682vw, 4.375rem) clamp(2.5rem, 1.009rem + 6.818vw, 6.25rem);
   background-color: var(--accent);
 }
 

@@ -3,21 +3,36 @@
 }
 
 .features .grid-columns-container {
-  margin-bottom: 202px;
+  margin-bottom: clamp(7.188rem, 4.716rem + 10.55vw, 12.625rem);
+  flex-direction: column-reverse;
+
+  @include tablet {
+    
+  }
 }
 
 .features__title {
   margin-bottom: 20px;
+  padding-top: 53px;
+
+  @include tablet {
+    padding-top: 5px;
+  }
 }
 
 .features__subtitle {
   margin-bottom: 26px;
+
+  @include tablet {
+    margin-bottom: 8px;
+  }
 }
 
 .features__text {
-  margin-bottom: 26px;
+  margin-bottom: 34px;
   color: var(--text-dark);
   font-size: 20px;
+  line-height: 1.6;
 }
 .features__list {
   color: var(--text-dark-transparent);

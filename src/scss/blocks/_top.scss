@@ -1,18 +1,20 @@
 .top {
   background-color: var(--back-dark);
-  padding: 100px 0 56px;
+  // padding: 100px 0 56px;
+  padding-top: clamp(50px, 27px + 6.06vw, 100px);
+  padding-bottom: clamp(36px, 30px + 1.7vw, 50px);
 
   .quote__text {
     font-size: 16px;
-    line-height: 32px;
+    line-height: 2;
   }
 
-  @media (max-width: 1100px) {
-    padding-top: 50px;
-  }
-  @media (max-width: 768px) {
-    padding-bottom: 32px;
-  }
+  // @media (max-width: 1100px) {
+  //   padding-top: 50px;
+  // }
+  // @include tablet {
+  //   padding-bottom: 36px;
+  // }
 }
 
 .top__inner {
@@ -20,7 +22,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 
-  @media (max-width: 768px) {
+  @include tablet {
     display: flex;
     flex-direction: column-reverse;
     gap: 5px;
@@ -34,7 +36,7 @@
 }
 
 .top__title {
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 
 .top__subtitle {
@@ -50,7 +52,7 @@
     font-size: 56px;
   }
   
-  @media (max-width: 768px) {
+  @include tablet {
     letter-spacing: -1px;
     line-height: 1.14;
     margin-bottom: 12px;
@@ -60,9 +62,9 @@
 .top__text {
   max-width: 470px;
   color: var(--text-light-transparent);
-  margin-bottom: 34px;
+  margin-bottom: 39px;
 
-  @media (max-width: 768px) {
+  @include tablet {
     margin-bottom: 19px;
   }
 }
@@ -78,17 +80,12 @@
     margin-bottom: 60px;
   }
 
-  @media (max-width: 768px) {
+  @include tablet {
     margin-bottom: 44px;
   }
 }
 
 .top__about-btn {
-}
-
-.top__contact {
-  color: var(--text-light);
-  text-transform: capitalize;
 }
 
 .top__image {
@@ -99,7 +96,7 @@
     align-self: center;
   }
 
-  @media (max-width: 768px) {
+  @include tablet {
     max-width: 100%;
   }
 }

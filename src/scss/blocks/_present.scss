@@ -12,21 +12,35 @@
   background-repeat: no-repeat;
   background-size: 282px 242px, 434px 288px;
   overflow: visible;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-position: center bottom 20%, left 0px top 150px;
+    background-size: 226px 194px, 380px 235px;
+    padding: 60px 20px 0px 20px;
+  }
 }
 
 .present__text {
   max-width: 248px;
-  position: relative;
+  // position: relative;
 
   &::before {
     content: "";
     position: absolute;
-    top: -170px;
-    left: -16px;
+    top: -80px;
+    left: 0;
     width: 148px;
     height: 148px;
     background-image: url("./../img/present-icon.svg");
     background-repeat: no-repeat;
+
+    @include tablet {
+      display: none;
+    }
   }
 }
 .present__title {
@@ -37,12 +51,14 @@
   margin-bottom: 23px;
 }
 
-.present__btn {
-
-}
-
 .present__person {
 position: absolute;
 right: 83px;
 bottom: 0;
+
+@include tablet {
+position: static;
+width: 40vw;
+margin: 0 auto;
+}
 }

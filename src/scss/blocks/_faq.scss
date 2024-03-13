@@ -1,6 +1,6 @@
 .faq {
-  padding-top: 70px;
-  padding-bottom: 106px;
+  padding-top: clamp(1.25rem, 0.007rem + 5.682vw, 4.375rem);
+  padding-bottom: clamp(1.875rem, -0.014rem + 8.636vw, 6.625rem);
   background-color: var(--back-light);
   .grid-column-text {
     align-self: start;
