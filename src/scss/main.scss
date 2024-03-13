@@ -1,6 +1,7 @@
 @import "./global/fonts";
 @import "./global/vars";
 @import "./global/reset";
+@import "./global/mixins";
 @import "./global/global";
 
-@import "./blocks/*.scss";
+@import "./blocks/**/*.scss";

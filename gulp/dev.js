@@ -47,7 +47,7 @@ gulp.task('html:dev', () => {
 });
 
 gulp.task('scss:dev', () => {
-  return gulp.src('./src/scss/*.scss')
+  return gulp.src('./src/scss/**/*.scss')
     .pipe(changed('./build/css/'))
     .pipe(plumber(plumberConfig('Styles')))
     .pipe(sourceMaps.init())

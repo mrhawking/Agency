@@ -1,0 +1,21 @@
+<li class="testimonials-item">
+  <div class="testimonials-item__rating">
+    @@for (var i = 0; i < context.stars; i++) { <img src="./img/star.svg" alt=""> }
+    @@if (context.stars < 5) {
+      @@for (var i = 0; i < 5 - context.stars; i++)
+        { <img src="./img/star-off.svg"
+        alt="">
+        }
+      }
+  </div>
+  <p class="testimonials-item__text">@@text</p>
+  <div class="testimonials-item__person">
+    <div class="testimonials-item__img-wrapper">
+      <img class="testimonials-item__img" src="./img/testimonials/person-@@avatar" alt="">
+    </div>
+    <p class="testimonials-item__name title-s title-s--dark">
+      @@name
+      <span class="testimonials-item__work">@@source</span>
+    </p>
+  </div>
+</li>

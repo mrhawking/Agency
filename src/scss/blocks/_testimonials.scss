@@ -1,0 +1,27 @@
+.testimonials {
+  padding-top: clamp(1.875rem, -0.462rem + 10.682vw, 7.75rem);
+  padding-bottom: clamp(0.938rem, -0.131rem + 4.886vw, 3.625rem);
+  background-color: var(--back-light);
+}
+
+.testimonials__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.testimonials__subtitle {
+  max-width: 394px;
+  margin: 0 auto;
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.testimonials__list {
+  columns: 329px 2;
+  column-gap: 0;
+  margin-bottom: 65px;
+}
+
+.testimonials__link-wrapper {
+  text-align: center;
+}

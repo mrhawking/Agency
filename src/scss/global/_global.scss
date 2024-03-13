@@ -1,5 +1,7 @@
 body {
-	-webkit-text-size-adjust: none;//чтобы хром не пересчитывал шрифт заголовка
+	text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-webkit-text-size-adjust: none; //чтобы не пересчитывалcz шрифт заголовка
 }
 
 .none {
@@ -8,8 +10,14 @@ body {
 
 .container {
 	max-width: 1200px;
+	width: 100vw;
 	padding: 0 15px;
 	margin: 0 auto;
+
+
+	@media (max-width: 375px) {
+		padding: 0 23px;
+	}
 }
 
 .visually-hidden {
@@ -25,6 +33,10 @@ body {
 	overflow: hidden;
 }
 
+.hidden {
+	display: none;
+}
+
 .title-accent {
 	font-size: 16px;
 	letter-spacing: 3px;
@@ -34,10 +46,11 @@ body {
 }
 
 .title-l {
-	font-size: 56px;
+	font-size: clamp(2.5rem, 2.102rem + 1.818vw, 3.5rem);
 	font-weight: 800;
 	line-height: 1.14;
 	letter-spacing: -1px;
+	text-transform: capitalize;
 
 	&--dark {
 		color: var(--text-dark);
@@ -46,12 +59,18 @@ body {
 	&--light {
 		color: var(--text-light);
 	}
+
+	@media (max-width: 900px) {
+		line-height: 1.2;
+		letter-spacing: normal;
+	}
 }
 
 .title-m {
-	font-size: 40px;
+	font-size: clamp(1.25rem, 0.753rem + 2.273vw, 2.5rem);
 	font-weight: 800;
 	line-height: 1.2;
+	text-transform: capitalize;
 
 	&--dark {
 		color: var(--text-dark);
@@ -78,13 +97,19 @@ body {
 
 .grid-columns-container {
 	display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
+	grid-template-columns: 1fr 1fr;
+	gap: 30px;
+
+	@include tablet {
+		display: flex;
+		flex-direction: column;
+		gap: 0;
+	}
 }
 
 .grid-column-text {
 	max-width: 470px;
-  align-self: center;
+	align-self: center;
 
 	&--right {
 		justify-self: end;
@@ -93,16 +118,74 @@ body {
 	&--left {
 		justify-self: start;
 	}
+
+	@include tablet {
+		max-width: 90%;
+	}
+
+	@media (max-width: 440px) {
+		max-width: none;
+	}
 }
 
 .grid-column-image {
-  align-self: center;
+	align-self: center;
 
 	&--left {
-		justify-content: start;
+		justify-self: start;
 	}
 
 	&--right {
-		justify-content: end;
+		justify-self: end;
 	}
+}
+
+.link {
+	display: inline-block;
+	font-size: 16px;
+	line-height: 2;
+	text-transform: capitalize;
+
+	&--dark {
+		color: var(--text-dark);
+	}
+
+	&--light {
+		color: var(--text-light);
+	}
+}
+
+.popup {
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 650px;
+	margin: 0 auto;
+	padding: 50px;
+	background-color: var(--back-light);
+	border: 1px solid var(--border-light);
+	border-radius: 6px;
+	text-align: center;
+	-webkit-box-shadow: 0px 0px 52px 31px rgba(34, 60, 80, 0.31);
+	-moz-box-shadow: 0px 0px 52px 31px rgba(34, 60, 80, 0.31);
+	box-shadow: 0px 0px 52px 31px rgba(34, 60, 80, 0.31);
+
+	&--hidden {
+		display: none;
+	}
+}
+
+.popup__title {
+	margin-bottom: 30px;
+	text-transform: none;
+}
+
+.popup__text {
+	margin-bottom: 30px;
+}
+
+.popup__btn {
+	margin-left: auto;
+	cursor: pointer;
 }

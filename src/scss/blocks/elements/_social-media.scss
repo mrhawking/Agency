@@ -1,0 +1,46 @@
+.social-media {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  width: 160px;
+  gap: 8px;
+}
+
+.social-media__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--accent);
+  border-radius: 50%;
+  background-color: var(--accent);
+  overflow: hidden;
+
+  a {
+    display: block;
+    padding: 12px;
+
+    &:focus {
+      outline: none;
+
+      svg {
+        fill: var(--text-dark);
+      }
+    }
+  }
+
+  svg {
+    fill: var(--text-light);
+  }
+
+  &:hover,
+  &:active {
+    background-color: var(--text-light);
+
+    svg {
+      fill: var(--accent);
+    }
+  }
+}

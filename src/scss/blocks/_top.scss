@@ -1,22 +1,42 @@
 .top {
   background-color: var(--back-dark);
-  padding: 100px 0 60px;
+  // padding: 100px 0 56px;
+  padding-top: clamp(50px, 27px + 6.06vw, 100px);
+  padding-bottom: clamp(36px, 30px + 1.7vw, 50px);
+
+  .quote__text {
+    font-size: 16px;
+    line-height: 2;
+  }
+
+  // @media (max-width: 1100px) {
+  //   padding-top: 50px;
+  // }
+  // @include tablet {
+  //   padding-bottom: 36px;
+  // }
 }
 
 .top__inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5px;
+  }
 }
 
 .top__content {
   padding-top: 10px;
-  max-width: 515px;
+  max-width: 100%;
   align-self: center;
 }
 
 .top__title {
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 
 .top__subtitle {
@@ -27,12 +47,26 @@
   color: var(--text-light);
   margin-bottom: 24px;
   text-transform: capitalize;
+
+  @media (max-width: 1100px) {
+    font-size: 56px;
+  }
+  
+  @include tablet {
+    letter-spacing: -1px;
+    line-height: 1.14;
+    margin-bottom: 12px;
+  }
 }
 
 .top__text {
   max-width: 470px;
   color: var(--text-light-transparent);
-  margin-bottom: 34px;
+  margin-bottom: 39px;
+
+  @include tablet {
+    margin-bottom: 19px;
+  }
 }
 
 .top__links {
@@ -41,23 +75,33 @@
   gap: 46px;
   flex-wrap: wrap ;
   margin-bottom: 108px;
+
+  @media (max-width: 1100px) {
+    margin-bottom: 60px;
+  }
+
+  @include tablet {
+    margin-bottom: 44px;
+  }
 }
 
 .top__about-btn {
 }
 
-.top__contact {
-  color: var(--text-light);
-  text-transform: capitalize;
-}
-
 .top__image {
   justify-self: end;
-  align-self: self-start;
+  align-self: start;
+
+  @media (max-width: 1100px) {
+    align-self: center;
+  }
+
+  @include tablet {
+    max-width: 100%;
+  }
 }
 
 .top__image img {
   display: block;
-  max-width: 100%;
   object-fit: contain;
 }

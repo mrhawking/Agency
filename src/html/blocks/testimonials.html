@@ -1,0 +1,12 @@
+<section class="testimonials">
+  <div class="container">
+    <h2 class="testimonials__title title-accent">Testimonials</h2>
+    <p class="testimonials__subtitle title-l title-l--dark">What our clients saying</p>
+    <ul class="testimonials__list">
+      @@loop("./elements/testimonials-item.html", "./data/testimonials.json")
+    </ul>
+    <div class="testimonials__link-wrapper">
+      <a href="#" class="btn btn--light">See all</a>
+    </div>
+  </div>
+</section>

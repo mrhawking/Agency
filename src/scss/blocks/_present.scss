@@ -1,0 +1,64 @@
+.present {
+  background-color: var(--back-dark);
+}
+
+
+.present__inner {
+  background-color: var(--back-light);
+  padding: 92px 83px 64px 100px;
+  position: relative;
+  background-image: url("./../img/present-cloud.svg"), url("./../img/present-chart.png");
+  background-position: right 94px bottom 47px, center top 50px;
+  background-repeat: no-repeat;
+  background-size: 282px 242px, 434px 288px;
+  overflow: visible;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-position: center bottom 20%, left 0px top 150px;
+    background-size: 226px 194px, 380px 235px;
+    padding: 60px 20px 0px 20px;
+  }
+}
+
+.present__text {
+  max-width: 248px;
+  // position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 148px;
+    height: 148px;
+    background-image: url("./../img/present-icon.svg");
+    background-repeat: no-repeat;
+
+    @include tablet {
+      display: none;
+    }
+  }
+}
+.present__title {
+  margin-bottom: 13px;
+}
+
+.present__subtitle {
+  margin-bottom: 23px;
+}
+
+.present__person {
+position: absolute;
+right: 83px;
+bottom: 0;
+
+@include tablet {
+position: static;
+width: 40vw;
+margin: 0 auto;
+}
+}

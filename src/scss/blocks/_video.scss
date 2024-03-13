@@ -1,7 +1,14 @@
 .video {
-  padding-top: 127px;
+  padding-top: clamp(63px, 34px + 7.76vw, 127px);
   padding-bottom: 191px;
   background-color: var(--back-light);
+}
+
+
+.video .grid-column-image {
+  @include tablet {
+    margin-bottom: 24px;
+  } 
 }
 
 .video__img-wrapper {
@@ -22,8 +29,16 @@
   justify-content: center;
   align-items: center;
   transform: translate(-50%, -50%);
-  border: 1px solid rgba(255, 255, 255, 1);
+  border: 1px solid var(--text-light);
   border-radius: 50%;
+
+  &:hover, &:focus, &:active {
+    border: 1px solid var(--text-light-transparent);
+
+    img {
+      opacity: 0.64;
+    }
+  }
 }
 
 .video__title {
@@ -32,6 +47,10 @@
 
 .video__subtitle {
   margin-bottom: 28px;
+
+  @include tablet {
+    margin-bottom: 16px;
+  } 
 }
 .video__text {
   color: var(--text-dark-transparent);

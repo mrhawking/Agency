@@ -12,7 +12,7 @@ gulp.task('default', gulp.series(
 
 gulp.task('docs', gulp.series(
   'clean:docs',
-  gulp.parallel('html:docs', 'scss:docs', 'images:docs', 'sprite:docs', 'fonts:docs', 'js:docs'),
+  gulp.parallel('html:docs', 'scss:docs', 'images:docs', 'sprite:docs', 'fonts:docs', 'copy:docs', 'js:docs'),
   gulp.parallel('server:docs')
 ));
 

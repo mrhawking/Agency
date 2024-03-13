@@ -4,9 +4,11 @@
   align-items: center;
   gap: 15px;
 }
+
 .nav__toggle {
   display: none;
 }
+
 .nav__logo {
   display: block;
   flex-shrink: 0;
@@ -15,24 +17,122 @@
 .nav__logo img {
   display: block;
 }
+
 .nav__list {
   display: flex;
   flex-basis: 750px;
   justify-content: space-around;
   align-items: center;
   flex-shrink: 1;
-  margin-top: 5px;//т.к.шрифт странный и наверху он прилипает,а внизу есть свободное пространство
+  flex-wrap: wrap;
+  margin-top: 5px; //т.к.шрифт странный и наверху он прилипает,а внизу есть свободное пространство
+
+  @include tablet {
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: grid;
+    gap: 12px;
+    padding: 42px 0;
+    margin: 0;
+    background: var(--back-dark);
+    list-style-type: none;
+    transform: translateX(-100%);
+    transition: .3s;
+    width: 200px;
+  }
 }
+
 .nav__item {
-  // padding: 10px;
+  @include tablet {
+    display: block;
+    width: 200px;
+    padding: 8px;
+    color: var(--text-light);
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+  }
 }
+
+.nav__item:hover {
+  background: rgba(255, 255, 255, .2)
+}
+
+.burger-checkbox:checked~.nav__list {
+  transform: translateX(0);
+}
+
 .nav__link {
   display: block;
   line-height: 3;
   color: var(--text-light);
   padding: 0 10px;
 }
-.nav__btn {
+
+.nav .nav__btn {
   flex-basis: 138px;
   flex-shrink: 0;
+
+  @media (max-width: 400px) {
+    display: none;
+  }
+}
+
+.burger-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+
+.burger {
+  display: none;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  background: transparent;
+  width: 40px;
+  height: 26px;
+
+  @include tablet {
+    display: block;
+  }
+}
+
+.burger::before,
+.burger::after {
+  content: '';
+  left: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 10px;
+  background: var(--text-light);
+}
+
+.burger::before {
+  top: 0;
+  box-shadow: 0 11px 0 var(--text-light);
+  ;
+  transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+}
+
+.burger::after {
+  bottom: 0;
+  transition: bottom .3s .15s, transform .3s;
+}
+
+.burger-checkbox:checked+.burger::before {
+  top: 11px;
+  transform: rotate(45deg);
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0);
+  transition: box-shadow .15s, top .3s, transform .3s .15s;
+}
+
+.burger-checkbox:checked+.burger::after {
+  bottom: 11px;
+  transform: rotate(-45deg);
+  transition: bottom .3s, transform .3s .15s;
 }

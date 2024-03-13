@@ -1,0 +1,36 @@
+.events-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+.events-list__item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border-dark);
+  padding: 41px 40px 36px 40px;
+}
+
+.events-list__date {
+  margin-bottom: 19px;
+  color: var(--text-light);
+}
+.events-list__day {
+}
+.events-list__time {
+  margin-bottom: 36px;
+  color: var(--text-light);
+}
+.events-list__title {
+  padding-top: 40px;
+  margin-bottom: 19px;
+  border-top: 1px solid var(--border-dark);
+}
+
+.events-list__excerpt {
+  margin-bottom: 26px;
+  flex-grow: 1;
+  color: var(--text-light-transparent);
+}
+.events-list__link {
+  color: var(--text-light);
+}

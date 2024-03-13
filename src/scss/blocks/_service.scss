@@ -1,0 +1,20 @@
+.service {
+  padding-top: clamp(5rem, 3.26rem + 7.955vw, 9.375rem);
+  padding-bottom: clamp(5rem, 3.26rem + 7.955vw, 9.375rem);
+  background-color: var(--back-light);
+}
+
+.service .grid-columns-container {
+  margin-bottom: clamp(5rem, 3.757rem + 5.682vw, 8.125rem);
+}
+
+.service__title {
+  margin-bottom: 20px;
+}
+
+.service__subtitle {
+  margin-bottom: 26px;
+}
+.service__text {
+  margin-bottom: 37px;
+}

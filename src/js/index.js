@@ -1,3 +1,24 @@
+'use strict'
+
+
+import subscription from "./modules/subscribtion";
+import accordion from "./modules/faq-accordion";
+import customSelect from "./modules/custom-select";
+import sliderTeam from "./modules/slider-team";
+import formValidation from "./modules/form-validation";
+accordion();
+customSelect();
+sliderTeam();
+formValidation();
+subscription();
+
+
+
+
+
+
+
+
 // import hello from './modules/hello.js';
 // import AirDatepicker from 'air-datepicker';
 // import 'air-datepicker/air-datepicker.css';
